@@ -120,46 +120,6 @@ public class Bebebe {
         //проверка на успешный выход (наличие кнопки вход)
         assertThat(page1.getByTitle("Войти")).isVisible();
     }
-    /*
-    @Test
-    @DisplayName("Добавление товара в избранное")
-    public void add_favorite(){
-        assertThat(page1.locator("#pages-nav").getByRole(AriaRole.LINK, new Locator.GetByRoleOptions().setName("Каталог"))).isVisible();
-        page1.locator("#pages-nav").getByRole(AriaRole.LINK, new Locator.GetByRoleOptions().setName("Каталог")).click();
 
-        assertThat(page1.getByTitle("Фурнитура для украшений")).isVisible();
-        page1.getByTitle("Фурнитура для украшений").click();
-
-        assertThat(page1.getByRole(AriaRole.LINK, new Page.GetByRoleOptions().setName("Подвеска Луна размер 18,7")).first()).isVisible();
-        //page1.getByRole(AriaRole.LINK, new Page.GetByRoleOptions().setName("Подвеска Луна размер 18,7")).first().click();
-
-        page1.locator(".a-image-box__btns > button:nth-child(2)").first().click();
-
-        //page1.locator(".a-image-box__btns > button:nth-child(2)").first().dispatchEvent("click");
-        //page1.getByLabel("Товары в корзине").getByLabel("Close").click();
-
-        //page1.getByTitle("Корзина").click();
-        //assertThat(page1.getByRole(AriaRole.CELL, new Page.GetByRoleOptions().setName("Подвеска Луна размер 18,7мм цвет золото Золотой x1 180 руб")).getByRole(AriaRole.LINK)).isVisible();
-        //page1.locator("[aria-label='Купить']").click();
-        //page1.waitForTimeout(5000);
-
-        //page1.getByTitle("Отложить товар в список избранных").click();
-        //assertThat(page1.locator("[class='a-favourites-btns__item a-icon-btn a-icon-btn__uppercase js-add-to-favorites']")).isVisible();
-        //page1.locator("[class='a-favourites-btns__item a-icon-btn a-icon-btn__uppercase js-add-to-favorites']").click();
-
-        //page1.getByText("В избранное").click();
-        //page1.locator("[class='a-favourites-btns']").focus();
-        //page1.locator("[class='a-favourites-btns']").click();
-        //page1.getByRole('button').click({ force: true });
-        //page1.locator("[data-original-title='Отложить товар в список избранных']").hover();
-        //page1.locator("[data-original-title='Отложить товар в список избранных']").click();
-
-        //page1.locator("[data-action='add-to-favorites']").click();
-
-        //assertThat(page1.locator("[data-original-title='Удалить товар из списка избранных']")).isVisible();
-        page1.getByTitle("Избранное").click();
-        assertThat(page1.getByRole(AriaRole.LINK, new Page.GetByRoleOptions().setName("Подвеска Луна размер 18,7")).first()).isVisible();
-    }
-    */
 }
 
